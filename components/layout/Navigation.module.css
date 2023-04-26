@@ -1,0 +1,73 @@
+.header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e64848;
+  padding: 0 10%;
+  font-family: 'Poppins', sans-serif;
+  color: #fefcf3;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: baseline;
+}
+
+.header li {
+  margin-left: 2.5rem;
+}
+
+.header a {
+  position: relative;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 5px;
+}
+
+.header a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #fef6fb;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.header a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.log_button {
+  font-family: inherit;
+  background-color: #e64848;
+  border: 0px;
+  color: #fef6fb;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.log_button:hover {
+  background-color: #c54343;
+  transition: transform 0.5s ease-in-out;
+  border-radius: 4px;
+}
